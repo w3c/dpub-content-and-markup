@@ -109,30 +109,31 @@
     </h2>
     <p>
     	Structural semantics provide authors and publishers a method of conveying intent and specific meaning to HTML tagging. A digital publishing structural semantics vocabulary defines a set of properties or behaviors relating to specific elements of a publication. This can improve the user experience for sighted and non-sighted readers.</p>
-<p>This document provides use cases for a structural semantics vocabulary for digital publications and recommendations for next steps toward incorporating the vocabulary into the OWP, as envisioned by the W3C Digital Publishing Interest Group and the International Digital Publishing Forum. The use cases are provided as a means to drive forward the conversation about standards in this arena.
-    </p>
+            <p>This document provides use cases for a structural semantics vocabulary for digital publications and recommendations for next steps toward incorporating the vocabulary into the OWP, as envisioned by the W3C Digital Publishing Interest Group and the International Digital Publishing Forum. The use cases are provided as a means to drive forward the conversation about standards in this arena.
+            </p>
   </section>
  <section class='informative'> 
     <h2 id="criteria">
     	Success Criteria and Options
     </h2>
-    <p>There are several options available for inclusion of a rich vocabulary of publishing terms. However, there are also several factors that inform the decision about how to include this information:</p>
+    <p>There are several options available for inclusion of a rich vocabulary of publishing terms; hoevever there are also several factors that determine the success of a method. The following criteria must be met:</p>
 <ol>
-<li><em>Validation on open web platform</em>: The solution should use a native OWP construct, such that the resulting content remains valid HTML5.</li>
-<li><em>Serialization agnostic:</em> The solution must be directly usable in both serializations of HTML5, without any variations in syntax.</li>
-<li><em>Decentralized vocabulary support</em> to allow expression of domain-specific concerns. The solution should allow domain-specific values to be used without an impact on validity, while also conveying information for how User Agents must deal with unrecognized values.</lI>
-<li><em>Clear AT contract:</em> The solution must come with a native OWP contract that describes how Assistive Technologies will make use of the provided semantics when rendering the content. The contract must also describe AT behaviors for when the provided semantics are unrecognized, as well as AT behaviors for the case where the inflected semantics conflict with the given host language semantic.</li>
-<li><em>Static provisioning:</em> The solution must not require support for script execution within the User Agent, such that that the provided information remains available in circumstances where scripting is disabled, or not supported at all.</li>
-<li><em>Simplicity and terseness:</em> The solution should be easy to learn, and difficult to get wrong.</li>
-<li><em>Appropriatenes:</em>. The solution's specification makes it appropriate for this specific usage and not overly-complex.</li>
-</ol>
+ <li><strong>Validation on open web platform:</strong> The solution should use a native OWP construct, such that the resulting content remains valid HTML5.</li>
+                <li><strong>Serialization agnostic:</strong> The solution must be directly usable in both serializations of HTML5, without any variations in syntax.</li>
+                <li><strong>Decentralized vocabulary support</strong> to allow expression of domain-specific concerns. The solution should allow domain-specific values to be used without an impact on validity, while also conveying information for how User Agents must deal with unrecognized values.</lI>
+                <li><strong>Clear AT contract:</strong> The solution must come with a native OWP contract that describes how Assistive Technologies will make use of the provided semantics when rendering the content. The contract must also describe AT behaviors for when the provided semantics are unrecognized, as well as AT behaviors for the case where the inflected semantics conflict with the given host language semantic.</li>
+                <li><strong>Static provisioning:</strong> The solution must not require support for script execution within the User Agent, such that that the provided information remains available in circumstances where scripting is disabled, or not supported at all.</li>
+                <li><strong>Simplicity and terseness:</strong> The solution should be easy to learn, and difficult to get wrong.</li>
+                <li><strong>Appropriatenes:</strong> The solution's specification makes it appropriate for this specific usage and not overly-complex.</li>
+            </ol>
+</p>
 </section>
  <section class='informative'> 
     <h2 id="objective">
     	Objective
     </h2>
     <p>
-    	  The Digital Publishing Interest Group and Protocols and Formats will work jointly to create a vocabulary of digital publishing terms. The terms will add specificity to HTML elements, allowing for clear interaction with assistive technolgies, easy reusability. and native validation. The joint task force will write use cases and compare existing vocabularies, including IDPF's <a href ="http://www.idpf.org/epub/vocab/structure/">EPUB Structural Semantic Vocabulary</a> and ARIA <a href="http://www.w3.org/WAI/PF/aria-1.1/roles">Roles</a> to create a recommended list of terms.</p>
+    	The Digital Publishing Interest Group and Protocols and Formats will work jointly to create a vocabulary of digital publishing terms. The terms will add specificity to HTML elements, allowing for clear interaction with assistive technolgies, easy reusability. and native validation. The joint task force will write use cases and compare existing vocabularies, including IDPF's <a href ="http://www.idpf.org/epub/vocab/structure/">EPUB Structural Semantic Vocabulary</a> and ARIA <a href="http://www.w3.org/WAI/PF/aria-1.1/roles">Roles</a> to create a recommended list of terms. This will require agreement regarding a non-AT-exclusive usage of the role attribute, centralized vs decentralized vocabulary approaches, and clear understanding of the native host language semantics in case of unrecognized values is clarified. To ensure validation and usage within HTML5, this will also require using the "applicable specifications" gloss to enable usage of values beyond those allowed by HTML5.</p>
   </section>
   <section>
     <h2>Placeholder</h2>
