@@ -95,24 +95,28 @@
 <body>
   <section id='abstract'> 
     <p>
-    	T.B.D.
+        This document describes requirements for for a digital publishing vocabulary that defines properties and behaviors of elements of a publication. It is hoped that these principles can aid assistive technologies and user agenets as well as authors and publishers.     
     </p>
   </section>
   <section id='sotd'> 
-    <p>
-    	<strong>This is a work in progress. No section should be considered final, and the absence of any content does not imply that such content is out of scope, or may not appear in the future. If you feel something should be covered here, tell us!</strong> @@@T.B.D.@@@
+    <p><strong>This is a work in progress. No section should be considered final, and the absence of any content does not imply that such content is out of scope, or may not appear in the future. If you feel something should be covered here, tell us!</strong> 
     </p>
   </section>
   <section class='informative'> 
     <h2>
     	Introduction
     </h2>
-    <p>
-    	Structural semantics provide authors and publishers a method of conveying intent and specific meaning to HTML tagging. A digital publishing structural semantics vocabulary defines a set of properties or behaviors relating to specific elements of a publication. This can improve the user experience for sighted and non-sighted readers.</p>
-            <p>This document provides use cases for a structural semantics vocabulary for digital publications and recommendations for next steps toward incorporating the vocabulary into the OWP, as envisioned by the W3C Digital Publishing Interest Group and the International Digital Publishing Forum. The use cases are provided as a means to drive forward the conversation about standards in this arena.
-            </p>
+    <p>Structural semantics provide authors and publishers a method of conveying intent and specific meaning to HTML tagging. A digital publishing structural semantics vocabulary defines a set of properties or behaviors relating to specific elements of a publication. This can improve the user experience for sighted and non-sighted readers.</p>
+    <p>This document provides use cases for a structural semantics vocabulary for digital publications and recommendations for next steps toward incorporating the vocabulary into the OWP, as envisioned by the W3C Digital Publishing Interest Group and the International Digital Publishing Forum. The use cases are provided as a means to drive forward the conversation about standards in this arena.</p>
   </section>
  <section> 
+     
+     <section> 
+         <h2 id="objective">Objective</h2>
+         <p>The Digital Publishing Interest Group and Protocols and Formats will work jointly to create a vocabulary of digital publishing terms. The terms will add specificity to HTML elements, allowing for clear interaction with assistive technolgies, easy reusability, and native validation. The joint task force will create a module of <a href ="http://www.w3.org/TR/wai-aria/">WAI-ARIA</a> that will inform assistive technologies of how to recognize vocabulary terms and of recommended behavior when encountering unrecognized terms. The task force will develop use cases, compare existing vocabularies, including IDPF's <a href ="http://www.idpf.org/epub/vocab/structure/">EPUB Structural Semantic Vocabulary</a> and ARIA <a href="http://www.w3.org/WAI/PF/aria-1.1/roles">Roles</a> to create a recommended list of terms, and create clear Accessibility API mappings. This will require agreement regarding a non-AT-exclusive usage of the role attribute, centralized vs decentralized vocabulary approaches, and clear understanding of the native host language semantics in case of unrecognized values is clarified. To ensure validation and usage within HTML5, this will also require using the "applicable specifications" gloss to enable usage of values beyond those allowed by HTML5.</p>
+     </section>    
+        
+     
     <h2 id="criteria">
     	Success Criteria and Options
     </h2>
@@ -128,10 +132,7 @@
             </ol>
 </p>
 </section>
- <section> 
-    <h2 id="objective">Objective</h2>
-            <p>The Digital Publishing Interest Group and Protocols and Formats will work jointly to create a vocabulary of digital publishing terms. The terms will add specificity to HTML elements, allowing for clear interaction with assistive technolgies, easy reusability. and native validation. The joint task force will write use cases and compare existing vocabularies, including IDPF's <a href ="http://www.idpf.org/epub/vocab/structure/">EPUB Structural Semantic Vocabulary</a> and ARIA <a href="http://www.w3.org/WAI/PF/aria-1.1/roles">Roles</a> to create a recommended list of terms. This will require agreement regarding a non-AT-exclusive usage of the role attribute, centralized vs decentralized vocabulary approaches, and clear understanding of the native host language semantics in case of unrecognized values is clarified. To ensure validation and usage within HTML5, this will also require using the "applicable specifications" gloss to enable usage of values beyond those allowed by HTML5.</p>
-        </section>
+ 
         <section>
             <h2>Enabling Assistive Technologies</h2>
             <section> <h3>Improved Navigation</h3>
@@ -139,7 +140,7 @@
             </section>
             <section>
                 <h3>Contextual Cues</h3>
-                <p>Contextual cues offer a screen reader technology information about deeply nested sectioning structures. Just having followed a link to a new position within the content, she has lost her orientation. The student invokes the screen reader function to report the position within the document hierarchy. As the publisher has provided structural semantics for relevant sections within the content, the screen reader is able to report the position as “volume 1, part 2, chapter 3, subsection 4” although the actual current nesting level is ten levels deep. The student then invokes the screen reader function to read current chapter and subchapter title. The screen reader traverses the sectioning structure upwards until it has located the nearest subchapter and chapter, and renders the title of these to the user. Similarly a blind student is exploring the content of an infographic in SVG format. Though the SVG elements can have textual values, titles and descriptions that a screen reader can voice, the students may need additional context to understand what SVG elements are the legend, data elements or labels. More detailed information on use cases can be found on the WAI wiki.</p>
+                <p>Contextual cues offer screen reader technology information about deeply nested sectioning structures. This orients a reader who has followed a link as to where in the pubication she is. A student can invoke the screen reader function to report the position within the document hierarchy. As the publisher has provided structural semantics for relevant sections within the content, the screen reader is able to report the position as “volume 1, part 2, chapter 3, subsection 4” although the actual current nesting level is ten levels deep. The student then invokes the screen reader function to read current chapter and subchapter title. The screen reader traverses the sectioning structure upwards until it has located the nearest subchapter and chapter, and renders the cahpter and subchapter titles the user. Similarly a blind student is exploring the content of an infographic in SVG format. Though the SVG elements can have textual values, titles, and descriptions that a screen reader can voice, the student may need additional context to understand what SVG elements are the legend, data elements, or labels. More detailed information on use cases can be found on the WAI wiki.</p>
             </section>
         </section>
         <section>
