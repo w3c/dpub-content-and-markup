@@ -95,7 +95,7 @@
 <body>
   <section id='abstract'> 
     <p>
-        This document describes requirements for for a digital publishing vocabulary that defines properties and behaviors of elements of a publication. It is hoped that these principles can aid assistive technologies and user agenets as well as authors and publishers.     
+        This document describes requirements for a digital publishing term vocabulary that defines structural semantics of elements of a publication. It is hoped that these principles can aid assistive technologies and user agents as well as authors and publishers.     
     </p>
   </section>
   <section id='sotd'> 
@@ -106,26 +106,34 @@
     <h2>
     	Introduction
     </h2>
-      <p>Several methods for inclusion of publishing-specific terms have been attempted over the years. These include using @class or @data-* and creating namespaced vocabularies to convey semantic meaning. Most of these methods are either cumbersome for the author, present validation issues, or demonstrate poor tagging practice. This document proposes a method for the inclusion of digital publishing structural semantics that will also enhance accessibility.</p>
-      <p>Structural semantics provide authors and publishers a method of conveying intent and specific meaning to HTML tagging. A digital publishing structural semantics vocabulary defines a set of properties or behaviors relating to specific elements of a publication. This can improve the user experience for sighted and non-sighted readers.</p>
+      <p>Several methods for inclusion of publishing-specific structural semantic terms in ebooks and online documents have been attempted over the years. These include using @class or @data-*, as well as creating namespaced attributes with associated vocabularies, to convey semantic meaning. Most of these methods are either cumbersome for the author, present validation issues, or demonstrate poor tagging practice. This document proposes to develop a method for the inclusion of digital publishing structural semantics, that will also enhance accessibility by providing a clarified AT contract.</p>
+      <p>Structural semantics provide authors and publishers a method of conveying intent and specific meaning to HTML tagging, in cases where the HTML grammar does not include the needed semantic natively. A digital publishing structural semantics vocabulary defines a set of properties (with or without explicit associated behaviors) relating to specific elements of a publication.</p>
+	  
+		  <p>Having digital publishing structural semantics natively supported in WAI-ARIA would yield multiple benefits. From a user perspective, this can improve the user experience, regardless of ability or disability, by potentially enabling enhanced behavioral repertoires of UAs, and by allowing for direct interaction with assistive technologies that support ARIA. From a publishers perspective, benefits include facilitation of content repurposing, native validation, as well as avoiding to have to use different expression forms when publishing ebooks vs online.</p>
      </section>
  <section> 
      
      <section> 
          <h2 id="objective">Objective</h2>
-         <p>The Digital Publishing Interest Group and Protocols and Formats will work jointly to create a vocabulary of digital publishing terms. The terms will add specificity to HTML elements, allowing for clear interaction with assistive technolgies, easy reusability, and native validation. The joint task force will:
-          <ul><li>create a module of <a href ="http://www.w3.org/TR/wai-aria/">WAI-ARIA</a> that will inform assistive technologies how to recognize vocabulary terms and of recommended behavior when encountering unrecognized terms</li> 
-              <li>compare existing vocabularies, including IDPF's <a href ="http://www.idpf.org/epub/vocab/structure/">EPUB Structural Semantic Vocabulary</a>, and ARIA <a href="http://www.w3.org/WAI/PF/aria-1.1/roles">Roles</a> to create a recommended list of terms</li>
-              <li>create clear Accessibility API mappings</li> 
+			<p>The Digital Publishing Interest Group and the Protocols and Formats WG will work jointly to establish a formalized method for using publishing-specific term vocabularies in WAI-ARIA. The joint task force will:</p>
+ 
+          <ul><li>Create a module of <a href ="http://www.w3.org/TR/wai-aria/">WAI-ARIA</a> that will inform assistive technologies how to recognize vocabulary terms and of recommended behavior when encountering unrecognized terms</li> 
+              <li>Analyze and compare existing vocabularies, including IDPF's <a href ="http://www.idpf.org/epub/vocab/structure/">EPUB Structural Semantic Vocabulary</a>, and ARIA <a href="http://www.w3.org/WAI/PF/aria-1.1/roles">Roles</a> to
+				  <ul>
+					  <li>Develop a native WAI-ARIA digital publishing vocabulary "module"</li>
+					  <li>Establish a recommended approach for publishers to include other terms that are not represented in the native vocabulary</li>
+				  </ul>
+			  </li>
+              <li>Create Accessibility API mappings for the new terms.</li> 
           </ul>
-             This will require agreement regarding a non-AT-exclusive usage of the role attribute, centralized vs decentralized vocabulary approaches, and clear understanding of the native host language semantics in case of unrecognized values is clarified. To ensure validation and usage within HTML5, this will also require using the "applicable specifications" gloss to enable usage of values beyond those allowed by HTML5.</p>
+             <p>Is it anticipated that this will require discussion and agreement regarding a non-AT-exclusive usage of the role attribute, support for centralized vs decentralized vocabulary approaches, and that the UA behavioral contract for unrecognized values is clarified. </p>
      </section>    
         
      
     <h2 id="criteria">
     	Success Criteria and Options
     </h2>
-    <p>There are several options available for inclusion of a rich vocabulary of publishing terms; however there are also several factors that determine the success of a method. The following criteria must be met:</p>
+    <p>There are several options available for inclusion of a rich vocabulary of publishing terms; however there are also several factors that determine the success of a method. The W3C Digital Publishing IG has identified the following criteria as important for success within the digital publishing ecosystem: @@@ TODO link to wiki</p>
 <ol>
  <li><strong>Validation on open web platform:</strong> The solution should use a native OWP construct, such that the resulting content remains valid HTML5.</li>
                 <li><strong>Serialization agnostic:</strong> The solution must be directly usable in both serializations of HTML5, without any variations in syntax.</li>
