@@ -149,7 +149,8 @@
         <section>
             <h2>Enabling Assistive Technologies</h2>
             <section> <h3>Improved Navigation</h3>
-                <p>Navigation and way-finding are key elements to enabling all readers access to a publication. Sighted and non-sighted readers must be able to move efficiently between major sections of a publication and be able to quickly locate print-equivalent page boundaries, tables, figures, audio and video clips and other features that they might have chosen to skip during the initial read. The inclusion and identification of specialized navigational elements allows a user agent to open custom navigation options for the user when requested.</p>
+               <p>Navigation and way-finding are key elements to enabling all readers access to a publication. Sighted and non-sighted readers must be able to move efficiently between major sections of a publication and be able to quickly locate print-equivalent page boundaries, tables, figures, audio and video clips and other features that they choose to read or skip while browsing content. The inclusion and identification of specialized navigational elements allows a user agent to open custom navigation options for the user when requested.</p>
+
             </section>
             <section>
                 <h3>Contextual Cues</h3>
@@ -164,10 +165,6 @@
                 <p>A user is reading a publication that includes specialized terminology. The built-in User Agent dictionary does not include many of these terms. The publication includes explicitly marked-up glossary terms and definitions for the specialized terms in the actual content. As a result, the User Agent is able to harvest these specialized terms and definitions, and expose them to the user via the common term lookup UI.</p>
             </section>
             <section>
-                <h3>Publications as domain-specific dictionaries</h3>
-                <p>A student is writing a dissertation on old french phonetics, and while reading a medieval french novel, she needs access to etymological and phonological data to help interpret a text. The student locates an e-book dictionary about old french phonetics and imports it into the User Agent. Now she is able to click on a verb in the novel, and have the etymological and/or phonological information displayed dynamically in a pop-up window.</p>
-            </section>
-            <section>
                 <h3>Intelligent Indexes</h3>
                 <p>A user is reviewing the index of a lengthy book about World War II. She can tap on the entries listed under the term &ldquo;Normandy&rdquo; to preview the content to which the index refers. This enables her to assess whether she wishes to access that link. Likewise, while reading a section about Normandy, the user can access the index by viewing a display of the relevant index entries and sub-entries. The window might display related index terms or a snippet of the index.</p>
             </section>
@@ -179,6 +176,11 @@
                 <h3>Domain-specific content fragments</h3>
                 <p>A user is reading a STEM textbook. The content is structured into the domain-specific fragments (e.g. physics: experiment, law; mathematics: theorem, proof) which frequently reference other fragments (&ldquo;as Experiment 2 showed, this approximation is not yet accurate&rdquo;, &ldquo;by Theorem 4 the function must be continuous&rdquo;). The user agent can integrate (activated) references into the reading flow, allowing the user to adapt the level of detail of the content.</p>
             </section>
+             <section>
+                <h3>Content Reuse</h3>
+                <p>A publisher offers customers the option to create customized publications on the fly by selecting content from a different source publications. The publisher uses an automated tool to process requests for dozens of a customers a month. As the tool that performs the automated process traverses the selected chapters to determine what content to include in the resulting publication, it analyzes the included hyperlinks and includes the content referenced from links that are rearnote references, but excludes content referenced from links that are generic hyperlinks.</p>
+            </section>
+            
         </section>
         
 </body>
